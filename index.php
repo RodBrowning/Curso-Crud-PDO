@@ -34,8 +34,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Crud PDO</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="container mt-5">
@@ -76,8 +80,8 @@
 			</div>
 		</div>
 		<div class="row justify-content-center">
-			<div class="col-md-6">
-				<table class="table table-condensed">
+			<div class="col-lg-6 col-md-10 col-sm-12 table-responsive">
+				<table class="table">
 					<thead>
 						<tr>
 							<th>#</th>
@@ -98,9 +102,13 @@
 							<td><?php echo $rowNum?></td>
 							<td><?php echo $row->name?></td>
 							<td><?php echo $row->company?></td>
-							<td><a class="form-control form-control-sm btn-sm btn btn-info" href="/crudPHPPdo/profile.php?id=<?php echo $row->id?>">More</a></td>
-							<td><a class="form-control form-control-sm btn-sm btn btn-primary" href="/crudPHPPdo/edit/edit.php?id=<?php echo $row->id?>">Edit</a></td>
-							<td><a class="form-control form-control-sm btn-sm btn btn-danger"  href="/crudPHPPdo/delete/delete.php?id=<?php echo $row->id?>" onclick="return confirm('Deletar?')">Delete</a></td>
+							<td><a class="form-control form-control-sm btn-sm btn btn-info" href="/profile.php?id=<?php echo $row->id?>">More</a></td>
+							<td><a class="form-control form-control-sm btn-sm btn btn-primary" href="/edit/edit.php?id=<?php echo $row->id?>">Edit</a></td>
+							<td>
+								<form action="/delete/delete.php?id=<?php echo $row->id?>" method="post">
+									<button type="submit" class="form-control form-control-sm btn-sm btn btn-danger"  href="/delete/delete.php?id=<?php echo $row->id?>" onclick="return confirm('Deletar?')">Delete</button>
+								</form>								
+							</td>
 						</tr>
 						<?php 
 						$rowNum++;	}

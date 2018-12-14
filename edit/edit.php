@@ -39,7 +39,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>	
+	<title>Edit Profile</title>		
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
@@ -47,7 +48,7 @@
 		<h1 class="h1 text-center">Edit profile</h1>
 		<hr>
 		<div class="row justify-content-center">
-			<div class="col-md-6">
+			<div class="col-lg-6 col-md-10 col-sm-12">
 				
 				<form method="post" class="form-group">	
 					<div class="form-group row">
@@ -83,9 +84,9 @@
 
 					?>
 				</form>
-				<a class="form-control form-control-sm btn btn-sm btn-primary btn-block" href="../index.php"><<-Back</a>
+					<a class="form-control form-control-sm btn btn-sm btn-primary btn-block" href="../index.php"><<-Back</a>
 			</div>
-
+				
 		</div>
 	</div>
 

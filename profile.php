@@ -15,8 +15,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Profile</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -24,7 +28,7 @@
 	<h1 class="h1 text-center">Profile</h1>
 	<hr>
 	<div class="row justify-content-center">
-		<div class="col-md-8">
+		<div class="col-lg-6 col-md-10 col-sm-12 table-responsive">
 			
 <?php
 	if($query->rowCount()>0){
@@ -65,8 +69,13 @@
 		}
 	}
 ?>   
-		<a href="index.php" class="btn btn-primary form-control form-control-sm btn-sm btn-block"><<-Back</a>
+		
 		</div>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-lg-6 col-md-10 col-sm-12">
+			<a href="index.php" class="btn btn-primary form-control form-control-sm btn-sm btn-block"><<-Back</a>
+		</div>				
 	</div>
 </div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
