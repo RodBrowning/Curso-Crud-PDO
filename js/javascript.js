@@ -23,11 +23,12 @@ function isEmpty(obj){
 		li.appendChild(txt);
 		obj.parentElement.appendChild(ul);	
 	}else{
+		// Remove a mensagem de erro
 		if(ul){
 			obj.parentElement.removeChild(obj.parentElement.lastChild);
 		}
-		obj.style.backgroundColor = "#fff";
-		var li = document.querySelector('#li');				
+		// Muda a cor do campo pra branco
+		obj.style.backgroundColor = "#fff";			
 	}
 }
 

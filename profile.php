@@ -28,7 +28,7 @@
 	<h1 class="h1 text-center">Profile</h1>
 	<hr>
 	<div class="row justify-content-center">
-		<div class="col-lg-6 col-md-10 col-sm-12 table-responsive">
+		<div class="col-lg-9 col-md-10 col-sm-12 table-responsive">
 			
 <?php
 	if($query->rowCount()>0){
