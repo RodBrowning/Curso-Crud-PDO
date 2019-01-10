@@ -44,6 +44,9 @@ function clearError(obj){
 			// Muda a cor do campo pra branco
 			obj.style.backgroundColor = "#fff";			
 		}
+	}else{
+		// Exibe alerta de erro caso a tecla em branco sejam precionada de inicio
+		isEmpty(obj);
 	}		
 }
 
