@@ -55,25 +55,25 @@
 						<input type="hidden" name="id" value="<?php echo $row->id?>">
 						<label for='name' class="col-sm-2">Name</label>
 					    <div class="col-sm-10">
-						    <input id="name" onfocusout="isEmpty(this)" class="form-control form-control-sm" type="text" name='name' value="<?php echo $row->name?>">
+						    <input id="name" onfocusout="isEmpty(this)" onkeyup="clearError(this)" class="form-control form-control-sm" type="text" name='name' value="<?php echo $row->name?>">
 					    </div>
 					</div>				
 					<div class="form-group row">
 						<label class="col-sm-2" for='company'>Company</label>
 					    <div class="col-sm-10">
-						    <input id="company" onfocusout="isEmpty(this)" class="form-control form-control-sm" type="text" name='company' value="<?php echo $row->company?>">
+						    <input id="company" onfocusout="isEmpty(this)" onkeyup="clearError(this)" class="form-control form-control-sm" type="text" name='company' value="<?php echo $row->company?>">
 					    </div>
 					</div>				
 					<div class="form-group row">
 						<label class="col-sm-2" for='language'>Language</label>
 					    <div class="col-sm-10">
-						    <input id="language" onfocusout="isEmpty(this)" class="form-control form-control-sm" type="text" name='language' value="<?php echo $row->language?>">
+						    <input id="language" onfocusout="isEmpty(this)" onkeyup="clearError(this)" class="form-control form-control-sm" type="text" name='language' value="<?php echo $row->language?>">
 					    </div>
 					</div>
 					<div class="form-group row">
 						<label class="col-sm-2" for='email'>Email</label>
 					    <div class="col-sm-10">
-						    <input id="email" onfocusout="isEmpty(this)" class="form-control form-control-sm" type="email" name='email' value="<?php echo $row->email?>">
+						    <input id="email" onfocusout="isEmpty(this)" onkeyup="clearError(this)" class="form-control form-control-sm" type="email" name='email' value="<?php echo $row->email?>">
 					    </div>
 					</div>
 					<input class="form-control form-control-sm btn btn-sm btn-success btn-block" type="submit" value="Atualizar" name="update" onclick="return checkEmpty()">					
