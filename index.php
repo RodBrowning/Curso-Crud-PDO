@@ -20,6 +20,7 @@
 		$query2->bindParam(':email', $email, PDO::PARAM_STR);
 
 		$query2->execute();
+		header("Location: http://".$_SERVER['HTTP_HOST']."/crudPHPPdo");
 	}
 	
 	$sql= 'select * from user';

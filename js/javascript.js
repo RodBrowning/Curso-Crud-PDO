@@ -6,7 +6,7 @@ function isEmpty(obj){
 	if(obj.value == ""){
 		// Aqui acontece se o campo estiver vazio
 		// Altera a cor do campo para um ton de vermelho claro
-		obj.style.backgroundColor = "#ffc6c6";
+		obj.style.backgroundColor = "#ffefef";
 
 		// Se nao existir uma ul ela será criada
 		// Se exister sera excluido o li dentro dela
