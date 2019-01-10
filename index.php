@@ -55,25 +55,25 @@
 						<div class="form-group row">						
 							<label class="col-sm-2" for='name'>Name</label>
 						    <div class="col-sm-10">						    
-							    <input id="name" class="form-control form-control-sm" onfocusout="isEmpty(this)" type="text" name='name'>
+							    <input id="name" class="form-control form-control-sm" onfocusout="isEmpty(this)" onkeyup="clearError(this)" type="text" name='name'>
 						    </div>
 						</div>			
 						<div class="form-group row">						
 							<label class="col-sm-2" for='company'>Company</label>
 						    <div class="col-sm-10">						    
-							    <input id="company" class="form-control form-control-sm" onfocusout="isEmpty(this)" type="text" name='company'>
+							    <input id="company" class="form-control form-control-sm" onfocusout="isEmpty(this)" onkeyup="clearError(this)" type="text" name='company'>
 						    </div>
 						</div>			
 						<div class="form-group row">						
 							<label class="col-sm-2" for='language'>Language</label>
 						    <div class="col-sm-10">						    
-							    <input id="language" class="form-control form-control-sm" onfocusout="isEmpty(this)" type="text" name='language'>
+							    <input id="language" class="form-control form-control-sm" onfocusout="isEmpty(this)" onkeyup="clearError(this)" type="text" name='language'>
 						    </div>
 						</div>			
 						<div class="form-group row">						
 							<label class="col-sm-2" for='email'>Email</label>
 						    <div class="col-sm-10">						    
-							    <input id="email" class="form-control form-control-sm" onfocusout="isEmpty(this)" type="email" name='email'>
+							    <input id="email" class="form-control form-control-sm" onfocusout="isEmpty(this)" onkeyup="clearError(this)" type="email" name='email'>
 						    </div>
 						</div>			
 						<input class="form-control form-control-sm btn-sm btn btn-info btn-block" type="submit" value="Criar" name="insert" onclick="return checkEmpty()">
